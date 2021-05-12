@@ -1,0 +1,187 @@
+html {
+    background-image: linear-gradient(45deg, #4361EE, #F72585);
+    padding-top: 15px;
+    overflow-y: hidden;
+}
+
+.container {
+    /* Gradient Border */
+    background: #1B3A4B;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    padding: 100px;
+    width: 400px;
+    margin: 2rem auto;
+    
+    /* Grid Content */
+    display: grid;
+    height: 64vh;
+    justify-content: center;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: 
+        "header header header header"
+        "intro intro intro intro"
+        "project1 project1 project2 project2"
+        "project3 project3 project4 project4"
+        "project5 project5 project6 project6"
+        "project7 project7 back back"
+        "footer footer footer footer";
+    
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    border-radius: var(--main-border);
+    padding-top: var(--main-padding);
+    color: #4CC9F0;
+}
+
+.intro {
+    grid-area: intro;
+    border-radius: var(--main-border);
+    padding-top: var(--main-padding);
+    color: #4CC9F0;
+}
+
+#name {
+    text-align: center;
+}
+
+#course-info {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project1 {
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.project3 {
+    grid-area: project3;
+}
+
+.project4 {
+    grid-area: project4;
+}
+
+.project5 {
+    grid-area: project5;
+}
+
+.project6 {
+    grid-area: project6;
+}
+
+.project7 {
+    grid-area: project7;
+}
+
+.back {
+    grid-area: back;
+}
+
+.btn {
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 120px;
+    height: 30px;
+    background-color: #4CC9F0;
+    margin: auto;
+    border-radius: 50px;
+    padding-top: 2px;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
+
+footer {
+    grid-area: footer;
+    margin: auto;
+    border-radius: var(--main-border);
+    padding-top: var(--main-padding);
+}
+
+.course_links {
+    text-align: right;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.contact {
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: 1.1rem;
+}
+
+.contact a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact__link:hover,
+.social_list__link:hover {
+    opacity: .7;
+}
+
+.social_list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social_list_item {
+    margin: 0 .5em;
+}
+
+.social_list__link {
+    padding: .5em;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+    color: #4CC9F0;
+}
+
+.footer__link:hover,
+.social_list__link:hover {
+    opacity: .7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social_list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+.social_list_item {
+    margin: 0 .5em;
+}
+
+.social_list__link {
+    padding: .5em;
+}

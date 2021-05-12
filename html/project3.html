@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Project 2</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+
+</head>
+<div class="container">
+    <div class="header">
+        <h2 class="header-title">ACADEMIC PLANNING version 2.0</h2>
+    </div>
+    <!-- Requirements Accordion -->
+    <div class="requirements">
+        <h2>Requirements</h2>
+        <div id="accordion">
+            <h3>Computer Science Core</h3>
+            <div>
+                <p>Placeholder text</p>
+            </div>
+            <h3>Track</h3>
+            <div>
+                <p>Placeholder text</p>
+            </div>
+            <h3>Required Cognates</h3>
+            <div>
+                <p>Placeholder text</p>
+            </div>
+        </div>
+    </div>
+    <div class="course-table">
+        <div class="course-flex-table" id="course-flex-table">
+        </div>
+    </div>
+    <div class="form_validation">
+        <form id="myform" name="form_input" onsubmit="return valid()" action="http://judah.cedarville.edu/echo.php"
+            method="POST">
+            <label for="phone" class="phone_header">Phone: </label><br>
+            <input type="tel" id="form_phone" name="phone" placeholder="Enter Phone #"><br>
+            <div id="phone_error" class="error hidden">Please enter a valid phone number</div><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="course-finder">
+        <h3>Course Finder</h3>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/project3.js"></script>
+
+</html>
